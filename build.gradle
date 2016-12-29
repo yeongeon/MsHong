@@ -1,0 +1,19 @@
+group 'io.mulberry'
+version '0.0.1'
+
+apply plugin: 'java'
+
+sourceCompatibility = JavaVersion.VERSION_1_8
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile (
+            "org.projectlombok:lombok:1.16.12",
+            "com.google.guava:guava:19.0"
+    )
+    testCompile (
+            "junit:junit:4.11"
+    )
+}
